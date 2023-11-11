@@ -13,13 +13,13 @@
         <name>REVREBEL</name>
         <title>REVREBEL</title>
         <type>theme</type>
-        <creationDate>08/01/2016</creationDate>
+        <creationDate>06/01/2023</creationDate>
         <author>REVREBEL</author>
         <authorEmail>helpdesk@revrebel.io</authorEmail>
         <authorUrl>http://www.revrebel.io</authorUrl>
         <copyright>Copyright (C) 2023 REVREBEL. All rights reserved.</copyright>
         <license>GNU General Public License version 2 or later</license>
-        <version>3.0</version>
+        <version>1.0</version>
         <apiVersion>3</apiVersion>
         <description><![CDATA[{{gT("Based on BootsWatch Themes:")}} <br><a href='https://bootswatch.com/3/'>{{gT("Visit Bootswatch page")}}</a> ]]></description>
         <lastUpdate>2023-11-09 12:00:00</lastUpdate>
