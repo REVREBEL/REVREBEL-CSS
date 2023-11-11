@@ -1,17 +1,17 @@
-'use strict';
+"use strict";
 
 module.exports = {
-	extends: 'stylelint-config-recommended',
-	rules: {
-		'alpha-value-notation': [
-			'percentage',
+	"extends": "stylelint-config-recommended",
+	"rules": {
+		"alpha-value-notation": [
+			"percentage",
       {
-				exceptProperties: [
-					'opacity',
-					'fill-opacity',
-					'flood-opacity',
-					'stop-opacity',
-					'stroke-opacity',
+				"exceptProperties": [
+					"opacity",
+					"fill-opacity",
+					"flood-opacity",
+					"stop-opacity",
+					"stroke-opacity",
         ],
       },
     ],
@@ -26,13 +26,13 @@ module.exports = {
           "after-comment"
         ],
         "ignore": [
-          "selectors-within-list" 
+          "selectors-within-list"
         ],
       }
     ],
-    'at-rule-no-vendor-prefix': true,
-		'color-function-notation': 'modern',
-		'color-hex-length': 'short',
+    "at-rule-no-vendor-prefix": true,
+		"color-function-notation": "modern",
+		"color-hex-length": "short",
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always-single-line",
     "at-rule-semicolon-newline-after": "always",
