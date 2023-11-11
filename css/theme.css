@@ -38,7 +38,7 @@ body {
 }
 
 /* specific for survey listing */
-@media (min-width: 761px) {
+@media (width >= 761px) {
   .surveys-list .btn-group {
     width: 49%;
   }
@@ -52,6 +52,7 @@ body {
 .group-outer-container{
     display: flex;
 }
+
 .group-container{
     width:100%;
 }
@@ -68,6 +69,7 @@ body {
     color: inherit;
 
 }
+
 .top-container .top-content{
 padding-top:1em;padding-bottom:1em;margin-bottom:2em;
 }
@@ -78,6 +80,7 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
 .top-container .top-content:empty{display:none}
 .group-description:empty{display:none}
 .group-title:empty{display:none}
+
 .top-container .progress {
     height: 21px;
     margin-bottom: 0;
@@ -95,15 +98,17 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
  #navigator-container {
      padding-bottom: 1em;
  }
+
  #navigator-container > hr
  {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
  }
 
 /**
  * Question part
  */
+
 /** Question Design **/
 
 .question-container {
@@ -112,11 +117,12 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
   color: #444;
   border-bottom: 1px solid #dbdbdb;
 }
+
 .question-container-printanswers {
   margin-top: 2em ;
   margin-bottom: 2em ;
   padding-bottom: 2em ;
-  border-bottom: 1px solid rgba(225, 225, 255, 0.6);
+  border-bottom: 1px solid rgb(225 225 255 / 60%);
 }
 
 .question-title-container {
@@ -143,11 +149,13 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
 .question-valid-container .text-info{
   font-weight: bold;
 }
+
 .answer-container, .question-help-container {
     border-color: #dbdbdb;
 }
+
 .answer-container {
-  border-width: 0px 1px 0px 1px;
+  border-width: 0 1px;
   border-style: solid;
   padding-top: 0.5em;
   padding-bottom:0.5em;
@@ -160,16 +168,18 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
 }
 
 .question-help-container {
-  border-width: 0px 1px 0px 1px;
+  border-width: 0 1px;
   border-style: solid;
 }
+
 /* little icon near the question-help */
 .ls-questionhelp{position: relative;}
 .dir-ltr .ls-questionhelp{margin-left:1.2em;}
 .dir-rtl .ls-questionhelp{margin-right:1.2em;}
 
-.ls-questionhelp:before{content:"\f059"}
-.ls-questionhelp:before {
+.ls-questionhelp::before{content:"\f059"}
+
+.ls-questionhelp::before {
     display: block;
     position:absolute;
     font-family: FontAwesome;
@@ -179,16 +189,18 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
 }
 
 /* If you want to center the icon */
+
 /*
 .ls-questionhelp:before {
     top:50%;
     margin-top:-0.7em;
 }
 */
-.dir-ltr .ls-questionhelp:before {
+.dir-ltr .ls-questionhelp::before {
     left:-1.1em;
 }
-.dir-rtl .ls-questionhelp:before {
+
+.dir-rtl .ls-questionhelp::before {
     right:-1.1em;
 }
 
@@ -211,10 +223,11 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
     clear: both;
     margin-right: 3rem;
 }
+
 .question-item .other-label
 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 /**
@@ -232,9 +245,11 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
     margin-top: 1em;
     list-style: none;
 }
+
 .surveys-list li {
     padding: 0.5em;
 }
+
 .surveys-list li a {
     margin-left: 0.5em;
 }
@@ -249,9 +264,9 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
     margin: 15px auto;
 }
 
-/*#outerframeContainer {
+/* #outerframeContainer {
     height: 100%;
-}*/
+} */
 
 #surveyListFooter {
     width: 100%;
@@ -260,11 +275,11 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
     padding-bottom: 80px;
     padding-top: 10px;
     margin-top: 10px;
-
-    bottom: 0px;
+    bottom: 0;
     height: 60px;
 }
-@media (max-width: 768px){
+
+@media (width <= 768px){
     #surveyListFooter {
         padding-bottom: 40px;
         padding-top: 5px;
@@ -279,9 +294,11 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
 .radio-item label,.checkbox-item label {
     cursor: pointer;
 }
+
 .radio-item [type='radio'],.checkbox-item [type='checkbox'] { /* Why we must positionning at same place */
     cursor: pointer;
 }
+
 .js td.radio-item,.js td.checkbox-item{
     cursor: pointer;
 }
@@ -297,37 +314,45 @@ padding-top:1em;padding-bottom:1em;margin-bottom:2em;
 
 /* Show more the heading in table */
 .ls-answers .ls-heading th{font-weight:700}
+
 /* Max width for some answer part */
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .yesno-button,.gender-button {
     width: 50%;
   }
+
   .yesno-button,.gender-button {
     float: left;
   }
+
   .dir-rtl .yesno-button,.dir-rtl .gender-button {
     float: right;
   }
 }
+
 /* table color */
 .ls-even{
 background-color:#f9f9f9;
 }
+
 /* dynamic group (multiple-numeric) .form-control-static same padding and border width than form-control for better alignment */
 .ls-group-dynamic .form-control-static{border: 2px solid transparent;padding-left:15px;padding-right:15px;}
+
 /* array by column hover column */
 .table-col-hover col:hover, /* This, maybe, work in CSS4 :) */
 .table-col-hover col.hover /* Actual solution : js only*/
 {
     background-color: #ecf0f1;
 }
+
 @media
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
+only screen and (width <= 760px),
+(device-width >= 768px) and (device-width <= 1024px)  {
     .ls-answers > tbody > tr.ls-even:hover {
         background-color:#f9f9f9;
     }
 }
+
 /**
  * Gender buttons
  */
@@ -345,6 +370,7 @@ only screen and (max-width: 760px),
 html body .navbar.navbar-default.navbar-fixed-top {
     z-index: 2000;
 }
+
 .file-upload-modal,.modal{
     z-index: 2001;
 }
@@ -363,9 +389,8 @@ Responsive navbar-brand image CSS
 ***********************************/
 
 .logo-container {
-  padding: 0px;
+  padding: 0;
   float: left;
-
   font-size: 18px;
   line-height: 20px;
 }
@@ -393,13 +418,15 @@ Responsive navbar-brand image CSS
     text-align: center;
     padding: 0!important;
 }
-.modal:before {
+
+.modal::before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
     margin-right: -4px;
 }
+
 .modal-dialog {
     display: inline-block;
      text-align: left;
@@ -443,8 +470,7 @@ table > tbody > tr > td.ddprefix {
 /**
  * On big screen only, iPad and up
  */
-@media only screen and (min-width: 761px) {
-
+@media only screen and (width >= 761px) {
     .table-dual-scale .separator {
         width: 6%;
     }
@@ -465,11 +491,12 @@ table > tbody > tr > td.ddprefix {
  * We don't have to collapse tables on pads.
  */
 @media
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
+only screen and (width <= 760px),
+(device-width >= 768px) and (device-width <= 1024px)  {
     table.ls-answers  tbody {
-        padding: 0 1em 0 1em;
+        padding: 0 1em;
     }
+
     table.ls-answers  tr{
         border: 0 none;
         padding: 1em;
@@ -512,7 +539,8 @@ only screen and (max-width: 760px),
         min-height: 2em;
         border: none;
         position: relative;
-        /*padding-left: 95%;*/
+
+        /* padding-left: 95%; */
         padding-bottom: 1em;
         white-space: normal;
         text-align:left ;
@@ -555,8 +583,7 @@ only screen and (max-width: 760px),
 }
 
 /** On small phones, leave some more space */
-@media only screen and (max-width: 400px) {
-
+@media only screen and (width <= 400px) {
     .array-by-columns-div .radio-list {
         border: 1px solid #ccc;
         padding: 1em;
@@ -636,6 +663,7 @@ only screen and (max-width: 760px),
 }
 
 /* Arrow */
+
 /* Will confuse survey takers?
 .questionvalidcontainer:after {
     top: 100%;
@@ -672,10 +700,6 @@ only screen and (max-width: 760px),
 #outerframeContainer {
     min-height: 100%;
     word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -o-hyphens: auto;
     hyphens: auto;
 }
 
@@ -700,6 +724,7 @@ div.yes-no .btn-group label {
 .horizontal-divider.top{
   border-top: 3px solid #323232;
 }
+
 .horizontal-divider.bottom{
   border-bottom: 3px solid #323232;
 }
@@ -707,20 +732,22 @@ div.yes-no .btn-group label {
 .vertical-divider.left {
   border-left: 3px solid #323232;
 }
+
 .vertical-divider.right {
   border-right: 3px solid #323232;
 }
-@media (max-width: 800px){
+
+@media (width <= 800px){
     .vertical-divider.left {
     border: none;
     }
+
     .vertical-divider.right {
     border: none;
     }
 }
 
-@media only screen and (max-device-width: 760px){
-
+@media only screen and (device-width <= 760px){
   h1, .h3{
     font-size:18px;
   }
@@ -762,13 +789,13 @@ div.yes-no .btn-group label {
 
   .ls-answers > tbody > tr > td.radio-item ,
   .ls-answers > tbody > tr > td.checkbox-item{
-    min-height:44px; /*minimal height for touching with finger */
+    min-height:44px; /* minimal height for touching with finger */
     padding-top:10px;
     padding-left:28px;
   }
 
   .ls-answers.table > tbody + tbody {
-    border-top: none; /*overriding Bootstrap */
+    border-top: none; /* overriding Bootstrap */
   }
 
   .help-block:last-child{
@@ -798,6 +825,7 @@ p.return-to-survey{
 .child-row-spacing>.row{
     padding-bottom: 8px;
 }
+
 .child-row-border-bottom>.row:last-child{
     padding-bottom: 0;
 }
@@ -827,7 +855,7 @@ label {
     font-weight: bold;
 }
 
-/* Define the color for Awesome Bootsrap Checkboxes ; based on bg-primary background-color*/
+/* Define the color for Awesome Bootsrap Checkboxes ; based on bg-primary background-color */
 .basic label::after{background-color:#337ab7}
 .cerulean label::after{background-color:#2fa4e7;}
 .cosmos label::after{background-color:#2780e3;}
@@ -846,7 +874,7 @@ label {
 .united label::after{background-color:#c34113;}
 .yeti  label::after{background-color:#008cba;}
 
-/*BS5 adjustments for nav dropdown*/
+/* BS5 adjustments for nav dropdown */
 .basic .dropdown-item:focus, .basic .dropdown-item:hover{background-color:#337ab7}
 .cerulean .dropdown-item:focus, .cerulean .dropdown-item:hover{background-color:#2fa4e7;}
 .cosmos .dropdown-item:focus, .cosmos .dropdown-item:hover{background-color:#2780e3;}
@@ -1019,7 +1047,7 @@ label {
 .slate .btn-check:focus:checked + .btn-primary, .slate .btn-check .btn-primary:focus:checked,
 .slate .btn-check:active + .btn-primary, .slate .btn-check:checked + .btn-primary {
     background-image: linear-gradient(#25282c, #292c30 40%, #2b2f32);
-    border-color: #000000;
+    border-color: #000;
 }
 
 .spacelab .btn-check .btn-primary:focus, .spacelab .btn-check:focus + .btn-primary {
