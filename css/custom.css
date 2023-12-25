@@ -264,7 +264,7 @@
     background: linear-gradient(to right, rgb(28 68 127), rgb(105 115 153), rgb(91 138 160), rgb(120 140 147), rgb(198 73 73), rgb(228 120 46), rgb(240 141 25); rgb(250 214 68));
 
     .gradient {
-        #1c447f,#5E688D,#5B8AA0, #B2D3dE, #Ef5353, #E4782E, #F08D19, #FAD644 #575757 #2F2F2F #FAFAFA
+        linear-gradient(to right, #1c447f,#5E688D, #5B8AA0, #B2D3dE, #Ef5353, #E4782E, #F08D19, #FAD644, #575757, #2F2F2F, #FAFAFA)
         /* Fallback (could use .jpg/.png alternatively) */
         background-color:  #1c447f;
       
